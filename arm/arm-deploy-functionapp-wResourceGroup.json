@@ -233,7 +233,7 @@
 									"[resourceId('Microsoft.Web/sites/', parameters('FunctionAppName'))]"
 								],
 								"properties": {
-									"RepoUrl": "https://github.com/Gordonby/AdoGateFunctions.git",
+									"RepoUrl": "https://github.com/Azure/azure-devops-prpolicy-function.git",
 									"branch": "main",
 									"publishRunbook": true,
 									"IsManualIntegration": true
