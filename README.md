@@ -49,8 +49,8 @@ Use the buttons below to quickly deploy the Azure Function to your Azure Subscri
 
 | Template  | ARM Template |
 |:----------|:-------------|
-| Function App | [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://ms.portal.azure.com/?feature.customportal=false#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FGordonby%2FSnippets%2Fmaster%2FAzureDevOps%2FPR-Check-Gate%2Farm-deploy-functionapp.json) |
-| Resource Group and Function App | [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://ms.portal.azure.com/?feature.customportal=false#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FGordonby%2FSnippets%2Fmaster%2FAzureDevOps%2FPR-Check-Gate%2Farm-deploy-functionapp-wResourceGroup.json)|
+| Function App | [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://ms.portal.azure.com/?feature.customportal=false#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-devops-prpolicy-function%2Fmain%2Farm%2Farm-deploy-functionapp.json) |
+| Resource Group and Function App | [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://ms.portal.azure.com/?feature.customportal=false#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-devops-prpolicy-function%2Fmain%2Farm%2Farm-deploy-functionapp-wResourceGroup.json)|
 
 The [code](https://github.com/Gordonby/AdoGateFunctions) is pulled at deploy time into the FunctionApp.
 
