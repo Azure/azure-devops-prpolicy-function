@@ -23,7 +23,7 @@ On the Environment, we'll add an Approval that will run some code to verify the 
 ![Approval gate overview](docassets/overview.png)
 
 *Components*
-1. A [Sample pipeline file is provided](raw/main/docassets/azure-pipelines.yml), it'll create the Environment stubs for you in Azure DevOps. If you're using your own existing pipeline file, make sure to declare an `Environment`
+1. A [Sample pipeline file is provided](docassets/azure-pipelines.yml), it'll create the Environment stubs for you in Azure DevOps. If you're using your own existing pipeline file, make sure to declare an `Environment`
 1. A deployed `Azure Function` (of type PowerShell), which uses [this PowerShell script](https://github.com/Gordonby/AdoGateFunctions/blob/main/ValidatePrFromBuildId/run.ps1). You won't need to change this code, as the variable components will be defined in your Environment Approval Gate.
 1. An `Environment approval gate`, defined to call the Azure Function.  A [sample configuration image](docassets/EnvApprovalFunctionConfig.png) is provided in this folder.
 
@@ -52,7 +52,7 @@ Use the buttons below to quickly deploy the Azure Function to your Azure Subscri
 | Function App | [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://ms.portal.azure.com/?feature.customportal=false#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-devops-prpolicy-function%2Fmain%2Farm%2Farm-deploy-functionapp.json) |
 | Resource Group and Function App | [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://ms.portal.azure.com/?feature.customportal=false#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-devops-prpolicy-function%2Fmain%2Farm%2Farm-deploy-functionapp-wResourceGroup.json)|
 
-The [code](https://github.com/Gordonby/AdoGateFunctions) is pulled at deploy time into the FunctionApp.
+The code for the Function App is pulled at deploy time from this Repository.
 
 ### Invoking the Azure Function
 
