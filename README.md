@@ -20,12 +20,12 @@ Because we need to reevaluate the PR Policies compliance regularly, this check n
 You'll need to use an `Environment` as part of your pipeline in order to add a approval check to the pipeline flow.
 On the Environment, we'll add an Approval that will run some code to verify the other Pull Request policies have been approved/met.
 
-![Approval gate overview]([./docassets/overview.png)
+![Approval gate overview](docassets/overview.png)
 
 *Components*
-1. A [Sample pipeline file is provided](azure-pipelines.yml), it'll create the Environment stubs for you in Azure DevOps. If you're using your own existing pipeline file, make sure to declare an `Environment`
+1. A [Sample pipeline file is provided](raw/main/docassets/azure-pipelines.yml), it'll create the Environment stubs for you in Azure DevOps. If you're using your own existing pipeline file, make sure to declare an `Environment`
 1. A deployed `Azure Function` (of type PowerShell), which uses [this PowerShell script](https://github.com/Gordonby/AdoGateFunctions/blob/main/ValidatePrFromBuildId/run.ps1). You won't need to change this code, as the variable components will be defined in your Environment Approval Gate.
-1. An `Environment approval gate`, defined to call the Azure Function.  A [sample configuration image](EnvApprovalFunctionConfig.png) is provided in this folder.
+1. An `Environment approval gate`, defined to call the Azure Function.  A [sample configuration image](docassets/EnvApprovalFunctionConfig.png) is provided in this folder.
 
 ## The Azure Function
 
